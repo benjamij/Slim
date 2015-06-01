@@ -1119,6 +1119,15 @@ class Request implements ServerRequestInterface
     {
         return $this->body;
     }
+    
+    /**
+     * Set Body
+     * @param $body string
+     */
+    public function setBody($body)
+    {
+        $this->body = $body;
+    }
 
     /**
      * Return an instance with the specified message body.
